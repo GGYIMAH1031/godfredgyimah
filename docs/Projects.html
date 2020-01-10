@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Welcome to Godfred Gyimah's page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>GODFRED S. GYIMAH, PhD</h1>
+						<p> This page highlights some past projects and experiences.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About Me</a></li>
+							<li><a href="Resume.html">Resume</a></li>
+							<li class="active"><a href="Projects.html">Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://twitter.com/GodfredGyimah" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/godfred.gyimah.92" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.linkedin.com/in/godfred-s-gyimah/" target="_blank" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+							<li><a href="https://github.com/GGYIMAH1031" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2> MY PHD RESEARCH </h2>
+									<font size="6"> Leveraging Machine Learning For Simulating Rock Excavations In Coal Mines </font> 	
+
+									<p>This study introduces a machine learning approach for calibrating the parameters of a Distinct Element Model (DEM). 
+									The proposed material calibration process combines simulation of tri-axial laboratory rock testing (to generate synthetic 
+									data) with predictive modeling based on the XGBoost algorithm. For DEM properties of geomaterials, the proposed method 
+									achieves prediction accuracies of 80.6% to 95.54%. 
+									</p>
+
+									<p>The trained XGBoost material calibration model is then used to simulate ground excavations in surface coal mines. 
+									This excavation simulation model was validated using field observations in an Australian coal mine and has been shown to 
+									predict ground excavation errors within an error range of 16.55%. This compared favorably with state-of-the-art solutions 
+									at the time (prediction error range of 300%) 
+									</p>
+								</header>
+								<iframe src="pdf_ppts/PhD_Research.pdf#zoom=FitH" height="705px" width="100%"></iframe>
+								
+							</article>
+
+							<article class="post featured">
+								<header class="major">
+									<h2> IMAGE ANALYTICS </h2>
+									<font size="6"> Predicting Seed Quality From Seed X-Ray Images </font> 	
+
+									<p>Seed quality assurance and control is an important step in ensuring that the seeds which eventually 
+									reach the farmer, are of acceptable quality. This POC study investigates the possibility of predicting the
+									future quality of seed germination using seed x-ray imaging and deep learning. Several convolutional neural network models, 
+									based on the VGG16 and ResNet50 architectures, were trained on the dataset. From experimentation, the best model was found 
+									to be an ensemble of 9 single models. Upon large-scale testing and validation, the joint model is able to correctly predict 
+									99.6% of vigor seeds and 59.3% of non-vigor seeds.   
+									</p>
+								</header>
+								<iframe src="pdf_ppts/Seed_Quality.pdf#zoom=FitH" height="710px" width="100%"></iframe>
+								
+							</article>
+
+							<article class="post featured">
+								<header class="major">
+									<h2> SMARTSURV: </h2>
+									<font size="6"> A 3D Convolutional Neural Network that recognizes actions in video surveillance </font> 	
+
+									<p> A lot of CCTV cameras are not human-monitored. Even in cases where they are monitored, CCTV operators typically 
+									have to pay attention to 16 to 64 cameras at the same time. There have been studies which suggest that humans lose about 95% 
+									of their attention after focusing on a screen for 20+ minutes (Green, 1999). A possible soultion is to develop an AI system, 
+									that is able to recognize and flag pre-defined actions in video surveillance. Such a system could be used to assist CCTV operators or 
+									even as a stand-alone surveillance monitor. This was the goal of this consulting project, which Godfred carried out, for a start-up company (name withheld).
+									The modeling approach, used here, is based on the 3D Convolutional Neural Network and the modeling results (89% recall and 90% precision) compared favorably 
+									with state-of-the-art solutions at the time (88% recall and 89% precision). 
+									</p>
+								</header>
+								<iframe src="pdf_ppts/SmartSurv_Project.pdf#zoom=FitH" height="710px" width="100%"></iframe>
+								
+							</article>
+
+							<article class="post featured">
+								<header class="major">
+									<h2> DRAGNET: </h2>
+									<font size="6"> A CNN Dragline Vision Model for construction environments </font> 	
+
+									<p> Recent studies towards dragline excavation efficiency have focused on incrementally achieving automation of the entire excavation cycle. 
+									Initial efforts resulted in the development of an automated dragline swing system, which optimizes the swing phase time. 
+									However, the system still requires human operation for collision avoidance. For full dragline autonomy, a machine vision system is needed for 
+									collision prevention and big rock handling during the 'swinging' and 'digging' phases of the excavation operation. 
+									Previous attempts in this area focused on collision avoidance vision models which estimated the location of the bucket in space in real-time. 
+									However, these previous models use image segmentation methods that are neither scalable nor multipurpose. 
+									In this study, a scalable and multipurpose vision model has been developed for draglines using Convolutional Neural Networks. 
+									This vision system averages 82.6% classification accuracy and 91% detection in collision avoidance. It also achieves an 87.32% detection rate in 
+									bucket pose estimation tasks. In addition, it averages 80.9% precision and 91.3% recall performance across terrain recognition and oversized 
+									rock detection tasks. With minimal modification, the proposed vision system can be adjusted for other automated excavators. 
+									</p>
+								</header>
+
+								<iframe src="pdf_ppts/Dragline_Vision.pdf#zoom=120%%" height="900px" width="100%"></iframe>
+								
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Social</h3>
+								<ul class="icons">
+									<li><a href="https://twitter.com/GodfredGyimah" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/godfred.gyimah.92" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.linkedin.com/in/godfred-s-gyimah/" target="_blank" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+									<li><a href="https://github.com/GGYIMAH1031" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li> Godfred S. Gyimah </li>
+						<div> &copy; 2016 </div>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
