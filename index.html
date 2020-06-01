@@ -48,6 +48,8 @@
 							<section class="post">
 								<header class="major">
 									<h1>ABOUT ME...</h1>
+									<script src="js/script1.js"> </script>
+		
 									<p>“The future is ours to shape. I feel we are in a race that we need to win. 
 									It’s a race between the growing power of the technology and the growing wisdom 
 									we need to manage it.” ~ Max Tegmark</p>
@@ -77,19 +79,34 @@
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<!-- <input type="text" name="name" id="name"/> -->
+										<textarea name="name" id="name" rows="1">Write your name here</textarea>
 									</div>
 									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<label for="subject">Subject</label>
+										<!-- <input type="text" name="email" id="subject" /> -->
+										<textarea name="subject" id="subject" rows="1">Write your subject here</textarea>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
+										<textarea name="message" id="message" rows="3">Write your message here</textarea>
+
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<!-- <li><input type="submit" value="Send Message" /></li> --> 
+									<a href = "mailto:godfred.s.gyimah@gmail.com?subject=Write%20your%20subject%20%2F%20reason%20here&body=Write%20your%20message%20here">Send Message</a>
+									<script>
+									function sendMail()
+									{
+										var yourMessage = document.getElementById("message").value;
+										var subject = document.getElementById("subject").value;
+										document.location.href = "mailto:godfred.s.gyimah@gmail.com?subject="
+											+ encodeURIComponent(subject)
+											+ "&body=" + encodeURIComponent(yourMessage);
+									}
+									</script>
+									
 								</ul>
 							</form>
 						</section>
